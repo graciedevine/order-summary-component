@@ -1,0 +1,101 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --gray: hsl(0, 0%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+a {
+  text-decoration: underline;
+}
+
+body {
+  background: url(images/pattern-background-desktop.svg);
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: var(--very-pale-blue);
+  max-width: 350px;
+  /* padding: 5px; */
+  border-radius: 15px;
+  box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+    0px 40px 30px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-product-img {
+  position: relative;
+  border-radius: 8px;
+}
+
+.card-product-img img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 25px 25px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  color: var(--dark-blue);
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 23px;
+}
+
+.card-body .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-music {
+  margin-right: 6px;
+  position: absolute;
+  /* left: 1em;
+  top: 40%;
+  z-index: 100; */
+}
+
+.annual-plan {
+  padding: px;
+}
+
+/* .buttons {
+  display: flex;
+  justify-content: right;
+} */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
