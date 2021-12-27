@@ -47,6 +47,7 @@ body {
 .card-product-img img {
   width: 100%;
   display: block;
+  border-radius: 15px;
 }
 
 .card-body {
@@ -68,22 +69,30 @@ body {
   margin-bottom: 23px;
 }
 
-.card-body .wrapper {
+.card-body .wrapper-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.wrapper {
+  padding: 0.5em;
+  /* width: 100%; */
+  flex-direction: row;
+  align-items: center;
+}
+
 .icon-music {
-  margin-right: 6px;
   position: absolute;
-  /* left: 1em;
-  top: 40%;
-  z-index: 100; */
 }
 
 .annual-plan {
-  padding: px;
+  margin-left: 60px;
+  /* align-items: center; */
+}
+
+.change-link {
+  margin-left: 200px;
 }
 
 /* .buttons {
