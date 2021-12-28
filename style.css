@@ -18,12 +18,12 @@ html {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 body {
   background: url(images/pattern-background-desktop.svg);
-  min-height: 100vh;
+  background-size: 1600px;
   padding: 25px;
   display: flex;
   justify-content: center;
@@ -32,44 +32,45 @@ body {
 
 .card {
   background: var(--very-pale-blue);
-  max-width: 350px;
-  /* padding: 5px; */
+  max-width: 400px;
   border-radius: 15px;
   box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
     0px 40px 30px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card-product-img {
-  position: relative;
-  border-radius: 8px;
-}
-
 .card-product-img img {
   width: 100%;
   display: block;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .card-body {
-  padding: 25px 25px;
+  padding: 30px 30px;
   margin-bottom: 15px;
 }
 
 .card-title {
   color: var(--dark-blue);
-  font-size: 22px;
-  font-weight: 900;
+  font-size: 24px;
+  font-weight: 900px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
-.card-text {
+.text-annual,
+.text-description {
   color: var(--gray);
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 23px;
+  margin-left: 5px;
 }
 
-.card-body .wrapper-buttons {
+.text-description {
+  text-align: center;
+}
+
+.card-body .buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +78,6 @@ body {
 
 .wrapper {
   padding: 0.5em;
-  /* width: 100%; */
   flex-direction: row;
   align-items: center;
 }
@@ -88,21 +88,37 @@ body {
 
 .annual-plan {
   margin-left: 60px;
-  /* align-items: center; */
 }
 
 .change-link {
-  margin-left: 200px;
+  text-decoration: underline;
 }
 
-/* .buttons {
-  display: flex;
-  justify-content: right;
-} */
+.buttons {
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.payment-button {
+  color: white;
+  background-color: var(--bright-blue);
+  padding: 14px 40px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.cancel-button {
+  color: var(--gray);
+  margin-top: 15px;
+}
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
 }
 
 .attribution a {
