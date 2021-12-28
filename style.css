@@ -117,6 +117,7 @@ body {
 .attribution {
   position: fixed;
   bottom: 20px;
+  margin: 0, auto;
 }
 
 .attribution a {
