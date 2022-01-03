@@ -24,6 +24,7 @@ a {
 body {
   background: url(images/pattern-background-desktop.svg);
   background-size: 1600px;
+  min-height: 100vh;
   padding: 25px;
   display: flex;
   justify-content: center;
